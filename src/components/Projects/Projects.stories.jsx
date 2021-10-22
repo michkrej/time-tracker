@@ -1,20 +1,18 @@
-// YourComponent.stories.js | YourComponent.stories.jsx
-
 import React from "react";
 
-import Project from "./Project";
+import Projects from "./Projects";
 
 //👇 This default export determines where your story goes in the story list
 export default {
-  title: "Project",
-  component: Project,
+  title: "Projects",
+  component: Projects,
 };
 
 //👇 We create a “template” of how args map to rendering
-const Template = (args) => <Project {...args} />;
+const Template = (args) => <Projects {...args} />;
 
-export const ProjectBlock = Template.bind({});
+export const ProjectsGrid = Template.bind({});
 
-ProjectBlock.args = {
+ProjectsGrid.args = {
   /*👇 The args you need here will depend on your component */
 };

@@ -1,11 +1,13 @@
 import React from "react";
-import styled from "styled-components";
+import { GrStorage } from "react-icons/gr";
 
-const Block = styled.section`
-  background: red;
-  width: 100%;
-`;
+import "./project.css";
 
-export default function Project() {
-  return <Block>Hello</Block>;
+export default function Project({ name, color }) {
+  return (
+    <section className="project" style={{ background: color }}>
+      <h2>{name}</h2>
+      <GrStorage style={{ fontSize: "2em" }} />
+    </section>
+  );
 }
